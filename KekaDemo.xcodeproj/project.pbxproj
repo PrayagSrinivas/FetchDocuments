@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DA1BABC2CA569F900390DE4 /* KekaDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA1BABB2CA569F900390DE4 /* KekaDemoApp.swift */; };
+		2DA1BABE2CA569F900390DE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA1BABD2CA569F900390DE4 /* ContentView.swift */; };
+		2DA1BAC02CA569FB00390DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA1BABF2CA569FB00390DE4 /* Assets.xcassets */; };
+		2DA1BAC32CA569FB00390DE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA1BAC22CA569FB00390DE4 /* Preview Assets.xcassets */; };
+		2DA1BACA2CA56A0F00390DE4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA1BAC92CA56A0F00390DE4 /* NetworkManager.swift */; };
+		2DA1BACC2CA56A7200390DE4 /* DocumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA1BACB2CA56A7200390DE4 /* DocumentModel.swift */; };
+		2DA1BACE2CA56B4A00390DE4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA1BACD2CA56B4A00390DE4 /* ViewModel.swift */; };
+		2DA1BAD02CA578E400390DE4 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA1BACF2CA578E400390DE4 /* CoreDataManager.swift */; };
+		2DA1BAD32CA57A0000390DE4 /* DocumentModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2DA1BAD12CA57A0000390DE4 /* DocumentModel.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2DA1BAB82CA569F900390DE4 /* KekaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KekaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA1BABB2CA569F900390DE4 /* KekaDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KekaDemoApp.swift; sourceTree = "<group>"; };
+		2DA1BABD2CA569F900390DE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2DA1BABF2CA569FB00390DE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DA1BAC22CA569FB00390DE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2DA1BAC92CA56A0F00390DE4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2DA1BACB2CA56A7200390DE4 /* DocumentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentModel.swift; sourceTree = "<group>"; };
+		2DA1BACD2CA56B4A00390DE4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		2DA1BACF2CA578E400390DE4 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		2DA1BAD22CA57A0000390DE4 /* DocumentModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DocumentModel.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DA1BAB52CA569F900390DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DA1BAAF2CA569F900390DE4 = {
+			isa = PBXGroup;
+			children = (
+				2DA1BABA2CA569F900390DE4 /* KekaDemo */,
+				2DA1BAB92CA569F900390DE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DA1BAB92CA569F900390DE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DA1BAB82CA569F900390DE4 /* KekaDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DA1BABA2CA569F900390DE4 /* KekaDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2DA1BADF2CA57DEE00390DE4 /* Model */,
+				2DA1BADE2CA57DD900390DE4 /* ViewModel */,
+				2DA1BADC2CA57DB200390DE4 /* View */,
+				2DA1BABB2CA569F900390DE4 /* KekaDemoApp.swift */,
+				2DA1BABF2CA569FB00390DE4 /* Assets.xcassets */,
+				2DA1BAC12CA569FB00390DE4 /* Preview Content */,
+			);
+			path = KekaDemo;
+			sourceTree = "<group>";
+		};
+		2DA1BAC12CA569FB00390DE4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2DA1BAC22CA569FB00390DE4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2DA1BADC2CA57DB200390DE4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2DA1BABD2CA569F900390DE4 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2DA1BADD2CA57DBE00390DE4 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2DA1BAC92CA56A0F00390DE4 /* NetworkManager.swift */,
+				2DA1BACF2CA578E400390DE4 /* CoreDataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2DA1BADE2CA57DD900390DE4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2DA1BADD2CA57DBE00390DE4 /* Manager */,
+				2DA1BACD2CA56B4A00390DE4 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2DA1BADF2CA57DEE00390DE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DA1BAD12CA57A0000390DE4 /* DocumentModel.xcdatamodeld */,
+				2DA1BACB2CA56A7200390DE4 /* DocumentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DA1BAB72CA569F900390DE4 /* KekaDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA1BAC62CA569FB00390DE4 /* Build configuration list for PBXNativeTarget "KekaDemo" */;
+			buildPhases = (
+				2DA1BAB42CA569F900390DE4 /* Sources */,
+				2DA1BAB52CA569F900390DE4 /* Frameworks */,
+				2DA1BAB62CA569F900390DE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KekaDemo;
+			productName = KekaDemo;
+			productReference = 2DA1BAB82CA569F900390DE4 /* KekaDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DA1BAB02CA569F900390DE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					2DA1BAB72CA569F900390DE4 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 2DA1BAB32CA569F900390DE4 /* Build configuration list for PBXProject "KekaDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DA1BAAF2CA569F900390DE4;
+			productRefGroup = 2DA1BAB92CA569F900390DE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DA1BAB72CA569F900390DE4 /* KekaDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DA1BAB62CA569F900390DE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA1BAC32CA569FB00390DE4 /* Preview Assets.xcassets in Resources */,
+				2DA1BAC02CA569FB00390DE4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DA1BAB42CA569F900390DE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA1BAD02CA578E400390DE4 /* CoreDataManager.swift in Sources */,
+				2DA1BACE2CA56B4A00390DE4 /* ViewModel.swift in Sources */,
+				2DA1BACA2CA56A0F00390DE4 /* NetworkManager.swift in Sources */,
+				2DA1BABE2CA569F900390DE4 /* ContentView.swift in Sources */,
+				2DA1BAD32CA57A0000390DE4 /* DocumentModel.xcdatamodeld in Sources */,
+				2DA1BACC2CA56A7200390DE4 /* DocumentModel.swift in Sources */,
+				2DA1BABC2CA569F900390DE4 /* KekaDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2DA1BAC42CA569FB00390DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2DA1BAC52CA569FB00390DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DA1BAC72CA569FB00390DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KekaDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = R2U675GT7F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.srinivas.KekaDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DA1BAC82CA569FB00390DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KekaDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = R2U675GT7F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.srinivas.KekaDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DA1BAB32CA569F900390DE4 /* Build configuration list for PBXProject "KekaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA1BAC42CA569FB00390DE4 /* Debug */,
+				2DA1BAC52CA569FB00390DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA1BAC62CA569FB00390DE4 /* Build configuration list for PBXNativeTarget "KekaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA1BAC72CA569FB00390DE4 /* Debug */,
+				2DA1BAC82CA569FB00390DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2DA1BAD12CA57A0000390DE4 /* DocumentModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2DA1BAD22CA57A0000390DE4 /* DocumentModel.xcdatamodel */,
+			);
+			currentVersion = 2DA1BAD22CA57A0000390DE4 /* DocumentModel.xcdatamodel */;
+			path = DocumentModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2DA1BAB02CA569F900390DE4 /* Project object */;
+}
