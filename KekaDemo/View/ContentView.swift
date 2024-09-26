@@ -27,7 +27,6 @@ struct ContentView: View {
                 Color.clear
             }
         }
-        .navigationTitle("Documents")
         .onAppear {
             // Check if there is offline data available
             if !viewModel.result.isEmpty {
@@ -64,21 +63,28 @@ struct ContentView: View {
                         case .success(let image):
                             image.resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: 200, height: 200)
+                                .frame(width: 50, height: 50)
                         case .failure(let error):
-                            Text("Failed to load image: \(error.localizedDescription)")
+                            VStack {
+                                Image(systemName: "photo.fill")
+                                    .frame(width: 50, height: 50)
+                                Text("Unable to load, Invalid URL")
+                                    .font(.system(size: 14, weight: .regular))
+                                    .multilineTextAlignment(.center)
+                            }
                         @unknown default:
                             EmptyView()
                     }
                 }
 
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 5) {
                     Text(item.abstract ?? "No Abstract")
                     Text(item.webUrl ?? "")
                 }
-                .font(.callout)
+                .font(.system(size: 14, weight: .regular))
             }
         }
+        .navigationTitle("Documents")
     }
     
     // Function to handle fetching data from the API with a loading delay
